@@ -39,10 +39,11 @@ def innenfor_omrade(lat, lon):
 
 
 def kartlenke(lat, lon):
-    """Bygger en Google Maps-lenke fra koordinater, eller tom streng."""
+    """Bygger en klikkbar Markdown-lenke til Google Maps, eller tom streng.
+    Krever at tabellen i Datawrapper har Markdown skrudd på."""
     if lat is None or lon is None:
         return ""
-    return f"https://www.google.com/maps?q={lat},{lon}"
+    return f"[Vis på kart](https://www.google.com/maps?q={lat},{lon})"
 
 
 def hent_yr():
