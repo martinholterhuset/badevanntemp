@@ -12,13 +12,22 @@ PARAMETER_VANNTEMP = 1003
 HEADERS_NVE = {"X-API-Key": NVE_API_KEY, "Accept": "application/json"}
 
 # Bounding box rundt Romerike/Øyeren (lat/lon, WGS84). Brukes til å filtrere
-# Yr-badeplasser geografisk. Samme boks som i søkescriptet.
-LAT_MIN, LAT_MAX = 59.7, 60.5
-LON_MIN, LON_MAX = 10.8, 11.7
+# Yr-badeplasser geografisk.
+LAT_MIN, LAT_MAX = 59.85, 60.5
+LON_MIN, LON_MAX = 10.95, 11.7
 
 # Valgfri ekstra navnefiltrering for Yr. Tom liste = ingen navnefiltrering
 # (kun geofilteret over gjelder da).
 YR_BADEPLASSER = []  # f.eks. ["Nordre Øyeren", "Sognsvann"]
+
+# Badeplasser som skal utelukkes selv om de faller innenfor boksen
+# (f.eks. Oslo-vann som ligger like sørvest for Romerike).
+YR_UTELUKK = {
+    "Lutvannet",
+    "Årvolldammen",
+    "Vågvann",
+    "Assuren",
+}
 
 # NVE-stasjoner med bekreftet ferske vanntemperaturdata.
 NVE_STASJONER = [
@@ -63,6 +72,9 @@ def hent_yr():
 
         # Geofilter: kun badeplasser innenfor bounding-boxen
         if not innenfor_omrade(lat, lon):
+            continue
+        # Utelukk navngitte badeplasser (f.eks. Oslo-vann)
+        if navn in YR_UTELUKK:
             continue
         # Valgfritt navnefilter på toppen
         if YR_BADEPLASSER and navn not in YR_BADEPLASSER:
