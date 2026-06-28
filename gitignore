@@ -1,0 +1,14 @@
+# Hemmeligheter
+.env
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# PyCharm
+.idea/
+
+# OS
+.DS_Store
