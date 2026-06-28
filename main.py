@@ -38,6 +38,13 @@ def innenfor_omrade(lat, lon):
     return LAT_MIN <= lat <= LAT_MAX and LON_MIN <= lon <= LON_MAX
 
 
+def kartlenke(lat, lon):
+    """Bygger en Google Maps-lenke fra koordinater, eller tom streng."""
+    if lat is None or lon is None:
+        return ""
+    return f"https://www.google.com/maps?q={lat},{lon}"
+
+
 def hent_yr():
     """Henter badetemperaturer fra Yrs uoffisielle endepunkt, filtrert til området."""
     url = "https://www.yr.no/api/v0/regions/NO/watertemperatures"
@@ -67,6 +74,7 @@ def hent_yr():
                 "tid": st.get("time"),
                 "lat": lat,
                 "lon": lon,
+                "kart": kartlenke(lat, lon),
                 "kilde": "Yr",
             }
         )
@@ -125,6 +133,7 @@ def hent_nve():
                 "tid": tid,
                 "lat": lat,
                 "lon": lon,
+                "kart": kartlenke(lat, lon),
                 "kilde": "NVE",
             }
         )
@@ -134,7 +143,7 @@ def hent_nve():
 def main():
     rader = hent_yr() + hent_nve()
 
-    felter = ["sted", "temperatur", "tid", "lat", "lon", "kilde"]
+    felter = ["sted", "temperatur", "tid", "lat", "lon", "kart", "kilde"]
     with open("badetemp.csv", "w", newline="", encoding="utf-8") as f:
         skriver = csv.DictWriter(f, fieldnames=felter)
         skriver.writeheader()
