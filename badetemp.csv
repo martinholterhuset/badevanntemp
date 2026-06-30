@@ -1,16 +1,18 @@
 sted,temperatur,tid,lat,lon,kart,kilde
+Morskogen stasjon,15,2026-06-29T16:00:00+02:00,60.47034,11.23974,"[Vis på kart](https://www.google.com/maps?q=60.47034,11.23974)",Yr
+Storenga,13,2026-06-29T19:49:00+02:00,60.39722,11.24321,"[Vis på kart](https://www.google.com/maps?q=60.39722,11.24321)",Yr
 Årneslandet ,16,2026-06-28T16:55:00+02:00,60.47862,11.16885,"[Vis på kart](https://www.google.com/maps?q=60.47862,11.16885)",Yr
 Rustad,17.4,2026-06-26T11:53:25+02:00,60.34564,11.01407,"[Vis på kart](https://www.google.com/maps?q=60.34564,11.01407)",Yr
-Stampetjernet,21,2026-06-29T06:31:34+02:00,59.98734,11.14641,"[Vis på kart](https://www.google.com/maps?q=59.98734,11.14641)",Yr
+Stampetjernet,20.5,2026-06-30T06:34:58+02:00,59.98734,11.14641,"[Vis på kart](https://www.google.com/maps?q=59.98734,11.14641)",Yr
 Hurdalssjøen,20,2026-06-28T17:09:00+02:00,60.32682,11.06465,"[Vis på kart](https://www.google.com/maps?q=60.32682,11.06465)",Yr
 Storsjøen,23,2026-06-28T23:31:00+02:00,60.36731,11.64831,"[Vis på kart](https://www.google.com/maps?q=60.36731,11.64831)",Yr
-Myrdammen,22,2026-06-29T10:14:13+02:00,59.86241,11.07867,"[Vis på kart](https://www.google.com/maps?q=59.86241,11.07867)",Yr
+Myrdammen,21.6,2026-06-30T09:35:17+02:00,59.86241,11.07867,"[Vis på kart](https://www.google.com/maps?q=59.86241,11.07867)",Yr
 Granerudsjøen,21,2026-06-29T07:45:00+02:00,60.4806,11.30865,"[Vis på kart](https://www.google.com/maps?q=60.4806,11.30865)",Yr
 Nordbytjernet,21,2026-06-27T12:14:00+02:00,60.15676,11.16533,"[Vis på kart](https://www.google.com/maps?q=60.15676,11.16533)",Yr
-Glomma v/Fetsund bru,17.5,2026-06-28T11:00:00Z,59.9209,11.15315,"[Vis på kart](https://www.google.com/maps?q=59.9209,11.15315)",NVE
-Glomma v/Blaker,17.0,2026-06-28T11:00:00Z,60.00438,11.2997,"[Vis på kart](https://www.google.com/maps?q=60.00438,11.2997)",NVE
-Langvatnet,22.3,2026-06-29T11:00:00Z,59.93079,10.96598,"[Vis på kart](https://www.google.com/maps?q=59.93079,10.96598)",NVE
-Mønevann,22.3,2026-06-29T11:00:00Z,59.87665,10.99001,"[Vis på kart](https://www.google.com/maps?q=59.87665,10.99001)",NVE
-Storsjøen i Odalen,21.7,2026-06-28T11:00:00Z,60.3772,11.55539,"[Vis på kart](https://www.google.com/maps?q=60.3772,11.55539)",NVE
-Tisjøen,18.7,2026-06-29T11:00:00Z,60.40721,11.13885,"[Vis på kart](https://www.google.com/maps?q=60.40721,11.13885)",NVE
-Ellingsjøen,20.2,2026-06-29T11:00:00Z,60.24234,11.40178,"[Vis på kart](https://www.google.com/maps?q=60.24234,11.40178)",NVE
+Glomma v/Fetsund bru,17.7,2026-06-29T11:00:00Z,59.9209,11.15315,"[Vis på kart](https://www.google.com/maps?q=59.9209,11.15315)",NVE
+Glomma v/Blaker,17.0,2026-06-29T11:00:00Z,60.00438,11.2997,"[Vis på kart](https://www.google.com/maps?q=60.00438,11.2997)",NVE
+Langvatnet,21.5,2026-06-30T11:00:00Z,59.93079,10.96598,"[Vis på kart](https://www.google.com/maps?q=59.93079,10.96598)",NVE
+Mønevann,21.1,2026-06-30T11:00:00Z,59.87665,10.99001,"[Vis på kart](https://www.google.com/maps?q=59.87665,10.99001)",NVE
+Storsjøen i Odalen,22.3,2026-06-29T11:00:00Z,60.3772,11.55539,"[Vis på kart](https://www.google.com/maps?q=60.3772,11.55539)",NVE
+Tisjøen,19.2,2026-06-30T11:00:00Z,60.40721,11.13885,"[Vis på kart](https://www.google.com/maps?q=60.40721,11.13885)",NVE
+Ellingsjøen,21.2,2026-06-30T11:00:00Z,60.24234,11.40178,"[Vis på kart](https://www.google.com/maps?q=60.24234,11.40178)",NVE
